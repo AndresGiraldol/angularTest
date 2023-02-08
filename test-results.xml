@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 109.0.5414.119 (Mac OS 10.15.7)" package="" timestamp="2023-02-08T17:29:46" id="0" hostname="EPCOBOGW1174" tests="12" errors="0" failures="2" time="0.069">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/109.0.5414.119 Safari/537.36"/>
+  </properties>
+  <testcase name="CartItemControlComponent should unsubscribe when component is destroyed" time="0.032" classname="CartItemControlComponent"/>
+  <testcase name="CartItemControlComponent should be created" time="0.003" classname="CartItemControlComponent"/>
+  <testcase name="CartItemControlComponent should have one subscription for product cart item" time="0.014" classname="CartItemControlComponent">
+    <failure type="">Expected 2 to equal 1.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/shop/cart/cart-item-control.component.spec.ts:54:45)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at AsyncTestZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:1234:43)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:284:39)
+</failure>
+  </testcase>
+  <testcase name="CartService notifies with most recent cart state imediately on subscription" time="0.001" classname="CartService"/>
+  <testcase name="CartService notifies subscribers on cart item changes" time="0.001" classname="CartService"/>
+  <testcase name="ProductsService should be created" time="0" classname="ProductsService"/>
+  <testcase name="ProductsService can fetch all products" time="0" classname="ProductsService"/>
+  <testcase name="CartWidgetComponent should be created" time="0.005" classname="CartWidgetComponent"/>
+  <testcase name="ProductsListComponent should render custom product types with custom template" time="0.007" classname="ProductsListComponent"/>
+  <testcase name="ProductsListComponent should render overriden default template if provided" time="0.003" classname="ProductsListComponent">
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.apply (src/app/shop/products-list.component.spec.ts:75:63)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:43)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:34)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:20)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="ProductsListComponent should be created" time="0.002" classname="ProductsListComponent"/>
+  <testcase name="ProductsListComponent should render products" time="0.001" classname="ProductsListComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
